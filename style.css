@@ -129,10 +129,10 @@ h5{
     color: white;
     border-radius: 50px;
     padding: 0px 20%;
-    text-align: center;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .bottom div h3{
