@@ -7,8 +7,8 @@ let total = 0,
     bebidaativ = 0,
     sobremesaativ = 0,
     cont2 = 0;
-let comidanome,bebidanome,sobremesanome,nome,endereço;
-var check,checkb,checks;
+let comidanome, bebidanome, sobremesanome, nome, endereço;
+var check, checkb, checks;
 window.onload = function mudar() {
     let tam = document.getElementsByClassName('prato')
     for (let cont = 0; cont < tam.length; cont++) {
@@ -18,14 +18,14 @@ window.onload = function mudar() {
                 tam[cont1].style.border = '0 solid #32B72E'
 
             }
-            if (check!==undefined) check.classList.add('invi')
+            if (check !== undefined) check.classList.add('invi')
             item.style.border = '3px solid #32B72E'
 
             var novo = document.createElement("ion-icon");
             novo.setAttribute('class', 'check');
             novo.setAttribute('name', 'checkmark-circle');
             check = item.appendChild(novo);
-            comidanome=item.id
+            comidanome = item.id
             switch (item.id) {
                 case 'feijoada':
                     comida = 22
@@ -34,7 +34,7 @@ window.onload = function mudar() {
                         comidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    comidanome='Feijoada'
+                    comidanome = 'Feijoada'
                     break;
                 case 'strogonoff':
                     comida = 25
@@ -43,7 +43,7 @@ window.onload = function mudar() {
                         comidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    comidanome='Strogonoff'
+                    comidanome = 'Strogonoff'
                     break;
                 case 'bolonhesa':
                     comida = 20
@@ -52,7 +52,7 @@ window.onload = function mudar() {
                         comidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    comidanome='Macarrão à Bolonhesa'
+                    comidanome = 'Macarrão à Bolonhesa'
                     break;
                 case 'parmegiana':
                     comida = 23
@@ -61,7 +61,7 @@ window.onload = function mudar() {
                         comidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    comidanome='Parmegiana'
+                    comidanome = 'Parmegiana'
                     break;
                 case 'escalope':
                     comida = 32
@@ -70,7 +70,7 @@ window.onload = function mudar() {
                         comidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    comidanome='Escalope'
+                    comidanome = 'Escalope'
                     break;
             }
             if (ativ == 3) {
@@ -88,14 +88,14 @@ window.onload = function mudar() {
             for (let j = 0; j < bebidatam.length; j++) {
                 bebidatam[j].style.border = '0 solid #32B72E'
             }
-            if (checkb!==undefined) checkb.classList.add('invi')
+            if (checkb !== undefined) checkb.classList.add('invi')
             item.style.border = '3px solid #32B72E'
 
             var novo = document.createElement("ion-icon");
             novo.setAttribute('class', 'checkb');
             novo.setAttribute('name', 'checkmark-circle');
             checkb = item.appendChild(novo);
-            bebidanome=item.id
+            bebidanome = item.id
             switch (item.id) {
                 case 'coca':
                     bebida = 5.90
@@ -104,7 +104,7 @@ window.onload = function mudar() {
                         bebidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    bebidanome='Coca-Cola'
+                    bebidanome = 'Coca-Cola'
                     break;
                 case 'fanta':
                     bebida = 5.90
@@ -113,7 +113,7 @@ window.onload = function mudar() {
                         bebidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    bebidanome='Fanta Uva'
+                    bebidanome = 'Fanta Uva'
                     break;
                 case 'guarana':
                     bebida = 5.90
@@ -122,7 +122,7 @@ window.onload = function mudar() {
                         bebidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    bebidanome='Guaraná'
+                    bebidanome = 'Guaraná'
                     break;
                 case 'agua':
                     bebida = 3.50
@@ -131,7 +131,7 @@ window.onload = function mudar() {
                         bebidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    bebidanome='Água'
+                    bebidanome = 'Água'
                     break;
                 case 'matte':
                     bebida = 4.50
@@ -140,7 +140,7 @@ window.onload = function mudar() {
                         bebidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    bebidanome='Matte-Leão'
+                    bebidanome = 'Matte-Leão'
                     break;
             }
             if (ativ == 3) {
@@ -158,14 +158,14 @@ window.onload = function mudar() {
             for (let b = 0; b < sobremesatam.length; b++) {
                 sobremesatam[b].style.border = '0 solid #32B72E'
             }
-            if (checks!==undefined) checks.classList.add('invi')
+            if (checks !== undefined) checks.classList.add('invi')
             item.style.border = '3px solid #32B72E'
 
             var novo = document.createElement("ion-icon");
             novo.setAttribute('class', 'checks');
             novo.setAttribute('name', 'checkmark-circle');
             checks = item.appendChild(novo);
-            
+
             switch (item.id) {
                 case 'pudim':
                     sobremesa = 7
@@ -174,7 +174,7 @@ window.onload = function mudar() {
                         ativ++;
                         sobremesaativ++;
                     }
-                    sobremesanome='Pudim'
+                    sobremesanome = 'Pudim'
                     break;
                 case 'bolo':
                     sobremesa = 8
@@ -183,7 +183,7 @@ window.onload = function mudar() {
                         ativ++;
                         sobremesaativ++;
                     }
-                    sobremesanome='Bolo de Pote'
+                    sobremesanome = 'Bolo de Pote'
                     break;
                 case 'pave':
                     sobremesa = 6
@@ -192,7 +192,7 @@ window.onload = function mudar() {
                         ativ++;
                         sobremesaativ++;
                     }
-                    sobremesanome='Pavê de Limão'
+                    sobremesanome = 'Pavê de Limão'
                     break;
             }
             if (ativ == 3) {
@@ -203,35 +203,42 @@ window.onload = function mudar() {
         })
     }
 }
+
 function wpp() {
 
-    if (ativ==3){
-    let confirm= document.querySelector('.pagamento')
-    confirm.classList.remove('invi')
-    document.querySelector('#comidanome').innerHTML=`${comidanome}`
-    document.querySelector('#comidapreco').innerHTML=`${comida.toFixed(2)}`
-    document.querySelector('#bebidanome').innerHTML=`${bebidanome}`
-    document.querySelector('#bebidapreco').innerHTML=`${bebida.toFixed(2)}`
-    document.querySelector('#sobremesanome').innerHTML=`${sobremesanome}`
-    document.querySelector('#sobremesapreco').innerHTML=`${sobremesa.toFixed(2)}`
-    document.querySelector('#totalpreco').innerHTML=`<strong>R$ ${total.toFixed(2)}</strong>`
+    if (ativ == 3) {
+        let confirm = document.querySelector('.pagamento')
+        confirm.classList.remove('invi')
+        document.querySelector('#comidanome').innerHTML = `${comidanome}`
+        document.querySelector('#comidapreco').innerHTML = `${comida.toFixed(2)}`
+        document.querySelector('#bebidanome').innerHTML = `${bebidanome}`
+        document.querySelector('#bebidapreco').innerHTML = `${bebida.toFixed(2)}`
+        document.querySelector('#sobremesanome').innerHTML = `${sobremesanome}`
+        document.querySelector('#sobremesapreco').innerHTML = `${sobremesa.toFixed(2)}`
+        document.querySelector('#totalpreco').innerHTML = `<strong>R$ ${total.toFixed(2)}</strong>`
     }
     let uri = `Olá, gostaria de fazer o pedido:\n- Prato: ${comidanome}\n- Bebida: ${bebidanome}\n- Sobremesa: ${sobremesanome}\nTotal: R$${total.toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereço}`;
     let encoded = encodeURIComponent(uri);
-    const a =document.querySelector('#wpp')
+    const a = document.querySelector('#wpp')
     a.setAttribute('href', `https://wa.me/5521981397379?text=${encoded}`)
 }
 
-function info(){
-    nome = prompt("Qual é o seu nome?")
-    endereço = prompt("Qual é o seu endereço?")
+function info() {
+    do {
+        
+        nome = prompt("Qual é o seu nome?")
+        endereço = prompt("Qual é o seu endereço?")
+        if(nome.length<1)alert('Insira o nome novamente!')
+        if(endereço.length<1)alert('Insira o Endereço novamente!')
+    } while ((nome.length < 1 || endereço.length < 1) || (nome.length < 1 && endereço.length < 1));
+
     let uri = `Olá, gostaria de fazer o pedido:\n- Prato: ${comidanome}\n- Bebida: ${bebidanome}\n- Sobremesa: ${sobremesanome}\nTotal: R$${total.toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereço}`;
     let encoded = encodeURIComponent(uri);
-    const a =document.querySelector('#wpp')
+    const a = document.querySelector('#wpp')
     a.setAttribute('href', `https://wa.me/5521981397379?text=${encoded}`)
 }
 
-function esconder(){
-    let confirm= document.querySelector('.pagamento')
+function esconder() {
+    let confirm = document.querySelector('.pagamento')
     confirm.classList.add('invi')
 }

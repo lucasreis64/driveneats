@@ -43,7 +43,7 @@ h5 {
     top: 0;
     left: 0;
     z-index: 1;
-
+    filter: drop-shadow(0 0px 4px #000000);
 }
 
 .header h3 {
@@ -60,6 +60,7 @@ h5 {
 .sobremesas,
 .bebidas {
     padding-top: 32px;
+    filter: drop-shadow(0 0px 3px lightgray);
 }
 
 .cardapio {
@@ -143,6 +144,7 @@ h5 {
 .bottom div h3 {
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
 }
 
 .invi {
@@ -184,13 +186,14 @@ a {
     font-size: 22px;
     font-weight: 400;
     padding: 21px 26px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    filter: drop-shadow(0 0px 6px gray);
 }
 
-.confirma p{
+.confirma p {
     color: white;
     font-size: 22px;
 }
@@ -227,7 +230,7 @@ strong {
     font-weight: bold;
 }
 
-.margem{
+.margem {
     margin-bottom: 15px;
 }
 
