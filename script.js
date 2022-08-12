@@ -227,8 +227,8 @@ function info() {
     do {
         nome = prompt("Qual é o seu nome?")
         endereço = prompt("Qual é o seu endereço?")
-        if(nome.length<1)alert('Insira o nome novamente!')
-        if(endereço.length<1)alert('Insira o Endereço novamente!')
+        if (nome.length < 1) alert('Insira o nome novamente!')
+        if (nome.length < 1) alert('Insira o Endereço novamente!')
     } while ((nome.length < 1 || endereço.length < 1) || (nome.length < 1 && endereço.length < 1));
 
     let uri = `Olá, gostaria de fazer o pedido:\n- Prato: ${comidanome}\n- Bebida: ${bebidanome}\n- Sobremesa: ${sobremesanome}\nTotal: R$${total.toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereço}`;
