@@ -216,12 +216,12 @@ function wpp() {
         let confirm = document.querySelector('.pagamento')
         confirm.classList.remove('invi')
         document.querySelector('#comidanome').innerHTML = `${comidanome}`
-        document.querySelector('#comidapreco').innerHTML = `${comida.toFixed(2)}`
+        document.querySelector('#comidapreco').innerHTML = `${comida.toFixed(2).replace('.',',')}`
         document.querySelector('#bebidanome').innerHTML = `${bebidanome}`
-        document.querySelector('#bebidapreco').innerHTML = `${bebida.toFixed(2)}`
+        document.querySelector('#bebidapreco').innerHTML = `${bebida.toFixed(2).replace('.',',')}`
         document.querySelector('#sobremesanome').innerHTML = `${sobremesanome}`
-        document.querySelector('#sobremesapreco').innerHTML = `${sobremesa.toFixed(2)}`
-        document.querySelector('#totalpreco').innerHTML = `<strong>R$ ${total.toFixed(2)}</strong>`
+        document.querySelector('#sobremesapreco').innerHTML = `${sobremesa.toFixed(2).replace('.',',')}`
+        document.querySelector('#totalpreco').innerHTML = `<strong>R$ ${total.toFixed(2).replace('.',',')}</strong>`
     }
     let uri = `Olá, gostaria de fazer o pedido:\n- Prato: ${comidanome}\n- Bebida: ${bebidanome}\n- Sobremesa: ${sobremesanome}\nTotal: R$${total.toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereço}`;
     let encoded = encodeURIComponent(uri);
