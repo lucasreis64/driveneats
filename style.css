@@ -80,22 +80,25 @@ h5 {
 .bebida {
     width: 172px;
     height: 216px;
-    padding: 18px 14px;
-    box-sizing: border-box;
+    padding: 0 14px;
     border-radius: 9px;
     background-color: white;
     box-sizing: border-box;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}  
 
 .cardapio img {
     width: 144px;
     height: 87px;
     border-radius: 4px;
     margin-bottom: 10px;
+    align-self: center;
 }
 
 .cardapio h4 {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 }
 
 .prato p {
@@ -111,7 +114,7 @@ h5 {
 }
 
 .prato h5 {
-    margin-top: 10px;
+    margin-top: 9px;
 }
 
 .bottom {
@@ -250,4 +253,17 @@ strong {
 .botao p {
     color: #50D074;
 
+}
+
+.bordaverde{
+    border: 5px solid #32B72E;
+}
+
+.semborda{
+    
+    border-width: 0px;
+}
+
+.padding{
+    padding: 9px;
 }

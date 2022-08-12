@@ -15,11 +15,12 @@ window.onload = function mudar() {
         let item = document.getElementsByClassName('prato')[cont];
         item.addEventListener('click', function () {
             for (let cont1 = 0; cont1 < tam.length; cont1++) {
-                tam[cont1].style.border = '0 solid #32B72E'
-
+                tam[cont1].classList.add('semborda')
+                tam[cont1].classList.remove('bordaverde','padding')
             }
             if (check !== undefined) check.classList.add('invi')
-            item.style.border = '3px solid #32B72E'
+            item.classList.remove('semborda')
+            item.classList.add('bordaverde','padding');
 
             var novo = document.createElement("ion-icon");
             novo.setAttribute('class', 'check');
@@ -86,10 +87,12 @@ window.onload = function mudar() {
         let item = document.getElementsByClassName('bebida')[i];
         item.addEventListener('click', function () {
             for (let j = 0; j < bebidatam.length; j++) {
-                bebidatam[j].style.border = '0 solid #32B72E'
+                bebidatam[j].classList.add('semborda')
+                bebidatam[j].classList.remove('bordaverde','padding')
             }
             if (checkb !== undefined) checkb.classList.add('invi')
-            item.style.border = '3px solid #32B72E'
+            item.classList.remove('semborda');
+            item.classList.add('bordaverde','padding');
 
             var novo = document.createElement("ion-icon");
             novo.setAttribute('class', 'checkb');
@@ -155,11 +158,14 @@ window.onload = function mudar() {
     for (let a = 0; a < sobremesatam.length; a++) {
         let item = document.getElementsByClassName('sobremesa')[a];
         item.addEventListener('click', function () {
+
             for (let b = 0; b < sobremesatam.length; b++) {
-                sobremesatam[b].style.border = '0 solid #32B72E'
+                sobremesatam[b].classList.add('semborda')
+                sobremesatam[b].classList.remove('bordaverde','padding')
             }
-            if (checks !== undefined) checks.classList.add('invi')
-            item.style.border = '3px solid #32B72E'
+            if (checkb !== undefined) checkb.classList.add('invi')
+            item.classList.remove('semborda');
+            item.classList.add('bordaverde','padding');
 
             var novo = document.createElement("ion-icon");
             novo.setAttribute('class', 'checks');
