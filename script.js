@@ -163,7 +163,7 @@ window.onload = function mudar() {
                 sobremesatam[b].classList.add('semborda')
                 sobremesatam[b].classList.remove('bordaverde','padding')
             }
-            if (checkb !== undefined) checkb.classList.add('invi')
+            if (checks !== undefined) checks.classList.add('invi')
             item.classList.remove('semborda');
             item.classList.add('bordaverde','padding');
 
