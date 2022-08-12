@@ -22,7 +22,7 @@
         <div class="pratos">
             <h2>Primeiro, seu prato</h2>
             <div class="cardapio">
-                <div  id="feijoada" class="prato">
+                <div id="feijoada" class="prato">
                     <img src="feijoada.jpg" alt="">
                     <h4>Feijoada</h4>
                     <p>Com arroz, couve</p>
@@ -37,13 +37,13 @@
                     <h5>R$ 25,00</h5>
                 </div>
                 <div id="bolonhesa" class="prato">
-                    <img  src="bolonhesa.jpg" alt="">
+                    <img src="bolonhesa.jpg" alt="">
                     <h4>Macarrão à Bolonhesa</h4>
                     <p>Muito suculento</p>
                     <h5>R$ 20,00</h5>
                 </div>
                 <div id="parmegiana" class="prato">
-                    <img  src="parmegiana.jpg" alt="">
+                    <img src="parmegiana.jpg" alt="">
                     <h4>Parmegiana</h4>
                     <p>Com arroz e</p>
                     <p>batata frita</p>
@@ -104,24 +104,55 @@
                     <h5>R$ 7,00</h5>
                 </div>
                 <div id="bolo" class="sobremesa">
-                    <img  src="bolo.jpg" alt="">
+                    <img src="bolo.jpg" alt="">
                     <h4>Bolo de Pote</h4>
                     <p>Bem recheado</p>
                     <h5>R$ 8,00</h5>
                 </div>
                 <div id="pave" class="sobremesa">
-                    <img  src="pave.jpg" alt="">
+                    <img src="pave.jpg" alt="">
                     <h4>Pavê de limão</h4>
                     <p>Muito cremoso</p>
                     <h5>R$ 6,00</h5>
                 </div>
             </div>
         </div>
+
     </div>
     <div class="bottom">
-        <div id="botao">
-            <h3 id="text">Selecione os 3 itens para fechar o pedido</h3>
+            <div onclick=' wpp()' id="botao">
+                <h3 id="text">Selecione os 3 itens para fechar o pedido</h3>
+            </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="invi pagamento">
+    <div class="fundo"></div>
+    <div class="confirma">
+        <div><strong>Confirme seu pedido</strong></div>
+        <div>
+            <p id="comidanome"></p>
+            <p id="comidapreco"></p>
         </div>
+        <div>
+            <p id="bebidanome"></p>
+            <p id="bebidapreco"></p>
+        </div>
+        <div>
+            <p id="sobremesanome"></p>
+            <p id="sobremesapreco"></p>
+        </div>
+        <div>
+            <p><strong>TOTAL</strong></p>
+            <p id="totalpreco"></p>
+        </div>
+        <a onclick='info()'target='blank' id="wpp"><div class="botao">
+            <p><strong>Tudo certo, pode pedir!</strong></p>
+        </div></a>
+        <div onclick="esconder()">
+            <strong class="pequeno">Cancelar</strong>
+        </div>
+    </div>
     </div>
 </body>
 
