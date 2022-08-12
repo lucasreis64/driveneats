@@ -225,7 +225,6 @@ function wpp() {
 
 function info() {
     do {
-        
         nome = prompt("Qual é o seu nome?")
         endereço = prompt("Qual é o seu endereço?")
         if(nome.length<1)alert('Insira o nome novamente!')
