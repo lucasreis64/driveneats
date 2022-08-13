@@ -7,7 +7,7 @@ let total = 0,
     bebidaativ = 0,
     sobremesaativ = 0,
     cont2 = 0;
-let comidanome, bebidanome, sobremesanome, nome, endereço;
+let comidanome, bebidanome, sobremesanome,nome,endereço;
 var check, checkb, checks;
 window.onload = function mudar() {
     let tam = document.getElementsByClassName('prato')
@@ -211,7 +211,6 @@ window.onload = function mudar() {
 }
 
 function wpp() {
-
     if (ativ == 3) {
         let confirm = document.querySelector('.pagamento')
         confirm.classList.remove('invi')
@@ -223,19 +222,17 @@ function wpp() {
         document.querySelector('#sobremesapreco').innerHTML = `${sobremesa.toFixed(2).replace('.',',')}`
         document.querySelector('#totalpreco').innerHTML = `<strong>R$ ${total.toFixed(2).replace('.',',')}</strong>`
     }
-    let uri = `Olá, gostaria de fazer o pedido:\n- Prato: ${comidanome}\n- Bebida: ${bebidanome}\n- Sobremesa: ${sobremesanome}\nTotal: R$${total.toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereço}`;
-    let encoded = encodeURIComponent(uri);
-    const a = document.querySelector('#wpp')
-    a.setAttribute('href', `https://wa.me/5521981397379?text=${encoded}`)
 }
 
 function info() {
     do {
-        nome = prompt("Qual é o seu nome?")
-        endereço = prompt("Qual é o seu endereço?")
-        if (nome.length < 1) alert('Insira o nome novamente!')
-        if (nome.length < 1) alert('Insira o Endereço novamente!')
-    } while ((nome.length < 1 || endereço.length < 1) || (nome.length < 1 && endereço.length < 1));
+        nome = prompt("Qual é o seu nome?") 
+        if ((nome==='' || nome == null)) alert('Insira o nome novamente!')
+    } while ((nome==='' || nome == null));
+    do {
+        endereço = prompt("Qual é o seu endereço?") 
+        if ((endereço==='' || endereço == null)) alert('Insira o endereço novamente!')
+    } while ((endereço==='' || endereço == null));    
 
     let uri = `Olá, gostaria de fazer o pedido:\n- Prato: ${comidanome}\n- Bebida: ${bebidanome}\n- Sobremesa: ${sobremesanome}\nTotal: R$${total.toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereço}`;
     let encoded = encodeURIComponent(uri);
