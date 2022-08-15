@@ -126,7 +126,7 @@ window.onload = function mudar() {
                         bebidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    bebidanome = 'Guaraná'
+                    bebidanome = 'Guaraná Antártica'
                     break;
                 case 'agua':
                     bebida = 3.50
@@ -135,7 +135,7 @@ window.onload = function mudar() {
                         bebidaativ++;
                     }
                     total = comida + sobremesa + bebida
-                    bebidanome = 'Água'
+                    bebidanome = 'Água Mineral'
                     break;
                 case 'matte':
                     bebida = 4.50
