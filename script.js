@@ -9,6 +9,7 @@ let total = 0,
     cont2 = 0;
 let comidanome, bebidanome, sobremesanome,nome,endereço;
 var check, checkb, checks;
+
 window.onload = function mudar() {
     let tam = document.getElementsByClassName('prato')
     for (let cont = 0; cont < tam.length; cont++) {
@@ -227,17 +228,17 @@ function wpp() {
 function info() {
     do {
         nome = prompt("Qual é o seu nome?") 
-        if ((nome==='' || nome == null)) alert('Insira o nome novamente!')
-    } while ((nome==='' || nome == null));
+        if ((nome==='')) alert('Insira o nome novamente!')
+    } while ((nome===''));
     do {
-        endereço = prompt("Qual é o seu endereço?") 
-        if ((endereço==='' || endereço == null)) alert('Insira o endereço novamente!')
-    } while ((endereço==='' || endereço == null));    
-
+        if (nome !== null) {endereço = prompt("Qual é o seu endereço?");  if ((endereço==='')) alert('Insira o endereço novamente!')}
+    } while ((endereço===''));    
+    if (nome !== null && endereço !==null) {
     let uri = `Olá, gostaria de fazer o pedido:\n- Prato: ${comidanome}\n- Bebida: ${bebidanome}\n- Sobremesa: ${sobremesanome}\nTotal: R$${total.toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereço}`;
     let encoded = encodeURIComponent(uri);
     const a = document.querySelector('#wpp')
     a.setAttribute('href', `https://wa.me/5521981397379?text=${encoded}`)
+    }
 }
 
 function esconder() {
