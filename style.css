@@ -80,13 +80,12 @@ h5 {
 .bebida {
     width: 172px;
     height: 216px;
-    padding: 0 14px;
+    padding: 18px 14px;
     border-radius: 9px;
     background-color: white;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; 
 }  
 
 .cardapio img {
@@ -265,5 +264,5 @@ strong {
 }
 
 .padding{
-    padding: 9px;
+    padding: 13px 9px;
 }
